@@ -1,11 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Task Manager App</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+
+  <div class="container">
+    <h2>Task Manager</h2>
+
+    <div class="input-area">
+      <input type="text" id="taskInput" placeholder="Enter a task..." />
+      <button id="addTaskBtn">Add</button>
+    </div>
+
+    <div class="filters">
+      <button data-filter="all">All</button>
+      <button data-filter="completed">Completed</button>
+      <button data-filter="pending">Pending</button>
+    </div>
+
+    <ul id="taskList"></ul>
+
+    <div class="stats">
+      <p>Total Tasks: <span id="total">0</span></p>
+      <p>Completed: <span id="completed">0</span></p>
+      <p>Pending: <span id="pending">0</span></p>
+    </div>
+  </div>
+
+  <script src="/scripts/exercise.js"></script>
 </body>
 </html>
